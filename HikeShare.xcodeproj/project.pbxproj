@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B53A1DEE1B83FCF500DC3BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A1DED1B83FCF500DC3BA3 /* AppDelegate.swift */; };
+		B53A1DF01B83FCF500DC3BA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A1DEF1B83FCF500DC3BA3 /* ViewController.swift */; };
+		B53A1DF31B83FCF500DC3BA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A1DF11B83FCF500DC3BA3 /* Main.storyboard */; };
+		B53A1DF51B83FCF500DC3BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53A1DF41B83FCF500DC3BA3 /* Assets.xcassets */; };
+		B53A1DF81B83FCF500DC3BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A1DF61B83FCF500DC3BA3 /* LaunchScreen.storyboard */; };
+		B53A1E031B83FCF500DC3BA3 /* HikeShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A1E021B83FCF500DC3BA3 /* HikeShareTests.swift */; };
+		B53A1E0E1B83FCF500DC3BA3 /* HikeShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A1E0D1B83FCF500DC3BA3 /* HikeShareUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B53A1DFF1B83FCF500DC3BA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B53A1DE21B83FCF500DC3BA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B53A1DE91B83FCF500DC3BA3;
+			remoteInfo = HikeShare;
+		};
+		B53A1E0A1B83FCF500DC3BA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B53A1DE21B83FCF500DC3BA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B53A1DE91B83FCF500DC3BA3;
+			remoteInfo = HikeShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B53A1DEA1B83FCF500DC3BA3 /* HikeShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikeShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53A1DED1B83FCF500DC3BA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B53A1DEF1B83FCF500DC3BA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B53A1DF21B83FCF500DC3BA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B53A1DF41B83FCF500DC3BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B53A1DF71B83FCF500DC3BA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B53A1DF91B83FCF500DC3BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53A1DFE1B83FCF500DC3BA3 /* HikeShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikeShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53A1E021B83FCF500DC3BA3 /* HikeShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeShareTests.swift; sourceTree = "<group>"; };
+		B53A1E041B83FCF500DC3BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53A1E091B83FCF500DC3BA3 /* HikeShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikeShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53A1E0D1B83FCF500DC3BA3 /* HikeShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeShareUITests.swift; sourceTree = "<group>"; };
+		B53A1E0F1B83FCF500DC3BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B53A1DE71B83FCF500DC3BA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A1DFB1B83FCF500DC3BA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A1E061B83FCF500DC3BA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B53A1DE11B83FCF500DC3BA3 = {
+			isa = PBXGroup;
+			children = (
+				B53A1DEC1B83FCF500DC3BA3 /* HikeShare */,
+				B53A1E011B83FCF500DC3BA3 /* HikeShareTests */,
+				B53A1E0C1B83FCF500DC3BA3 /* HikeShareUITests */,
+				B53A1DEB1B83FCF500DC3BA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B53A1DEB1B83FCF500DC3BA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B53A1DEA1B83FCF500DC3BA3 /* HikeShare.app */,
+				B53A1DFE1B83FCF500DC3BA3 /* HikeShareTests.xctest */,
+				B53A1E091B83FCF500DC3BA3 /* HikeShareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B53A1DEC1B83FCF500DC3BA3 /* HikeShare */ = {
+			isa = PBXGroup;
+			children = (
+				B53A1DED1B83FCF500DC3BA3 /* AppDelegate.swift */,
+				B53A1DEF1B83FCF500DC3BA3 /* ViewController.swift */,
+				B53A1DF11B83FCF500DC3BA3 /* Main.storyboard */,
+				B53A1DF41B83FCF500DC3BA3 /* Assets.xcassets */,
+				B53A1DF61B83FCF500DC3BA3 /* LaunchScreen.storyboard */,
+				B53A1DF91B83FCF500DC3BA3 /* Info.plist */,
+			);
+			path = HikeShare;
+			sourceTree = "<group>";
+		};
+		B53A1E011B83FCF500DC3BA3 /* HikeShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				B53A1E021B83FCF500DC3BA3 /* HikeShareTests.swift */,
+				B53A1E041B83FCF500DC3BA3 /* Info.plist */,
+			);
+			path = HikeShareTests;
+			sourceTree = "<group>";
+		};
+		B53A1E0C1B83FCF500DC3BA3 /* HikeShareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B53A1E0D1B83FCF500DC3BA3 /* HikeShareUITests.swift */,
+				B53A1E0F1B83FCF500DC3BA3 /* Info.plist */,
+			);
+			path = HikeShareUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B53A1DE91B83FCF500DC3BA3 /* HikeShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53A1E121B83FCF500DC3BA3 /* Build configuration list for PBXNativeTarget "HikeShare" */;
+			buildPhases = (
+				B53A1DE61B83FCF500DC3BA3 /* Sources */,
+				B53A1DE71B83FCF500DC3BA3 /* Frameworks */,
+				B53A1DE81B83FCF500DC3BA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HikeShare;
+			productName = HikeShare;
+			productReference = B53A1DEA1B83FCF500DC3BA3 /* HikeShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B53A1DFD1B83FCF500DC3BA3 /* HikeShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53A1E151B83FCF500DC3BA3 /* Build configuration list for PBXNativeTarget "HikeShareTests" */;
+			buildPhases = (
+				B53A1DFA1B83FCF500DC3BA3 /* Sources */,
+				B53A1DFB1B83FCF500DC3BA3 /* Frameworks */,
+				B53A1DFC1B83FCF500DC3BA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B53A1E001B83FCF500DC3BA3 /* PBXTargetDependency */,
+			);
+			name = HikeShareTests;
+			productName = HikeShareTests;
+			productReference = B53A1DFE1B83FCF500DC3BA3 /* HikeShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B53A1E081B83FCF500DC3BA3 /* HikeShareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53A1E181B83FCF500DC3BA3 /* Build configuration list for PBXNativeTarget "HikeShareUITests" */;
+			buildPhases = (
+				B53A1E051B83FCF500DC3BA3 /* Sources */,
+				B53A1E061B83FCF500DC3BA3 /* Frameworks */,
+				B53A1E071B83FCF500DC3BA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B53A1E0B1B83FCF500DC3BA3 /* PBXTargetDependency */,
+			);
+			name = HikeShareUITests;
+			productName = HikeShareUITests;
+			productReference = B53A1E091B83FCF500DC3BA3 /* HikeShareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B53A1DE21B83FCF500DC3BA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Wei Chung Chuo";
+				TargetAttributes = {
+					B53A1DE91B83FCF500DC3BA3 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					B53A1DFD1B83FCF500DC3BA3 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = B53A1DE91B83FCF500DC3BA3;
+					};
+					B53A1E081B83FCF500DC3BA3 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = B53A1DE91B83FCF500DC3BA3;
+					};
+				};
+			};
+			buildConfigurationList = B53A1DE51B83FCF500DC3BA3 /* Build configuration list for PBXProject "HikeShare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B53A1DE11B83FCF500DC3BA3;
+			productRefGroup = B53A1DEB1B83FCF500DC3BA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B53A1DE91B83FCF500DC3BA3 /* HikeShare */,
+				B53A1DFD1B83FCF500DC3BA3 /* HikeShareTests */,
+				B53A1E081B83FCF500DC3BA3 /* HikeShareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B53A1DE81B83FCF500DC3BA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53A1DF81B83FCF500DC3BA3 /* LaunchScreen.storyboard in Resources */,
+				B53A1DF51B83FCF500DC3BA3 /* Assets.xcassets in Resources */,
+				B53A1DF31B83FCF500DC3BA3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A1DFC1B83FCF500DC3BA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A1E071B83FCF500DC3BA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B53A1DE61B83FCF500DC3BA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53A1DF01B83FCF500DC3BA3 /* ViewController.swift in Sources */,
+				B53A1DEE1B83FCF500DC3BA3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A1DFA1B83FCF500DC3BA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53A1E031B83FCF500DC3BA3 /* HikeShareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53A1E051B83FCF500DC3BA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53A1E0E1B83FCF500DC3BA3 /* HikeShareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B53A1E001B83FCF500DC3BA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B53A1DE91B83FCF500DC3BA3 /* HikeShare */;
+			targetProxy = B53A1DFF1B83FCF500DC3BA3 /* PBXContainerItemProxy */;
+		};
+		B53A1E0B1B83FCF500DC3BA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B53A1DE91B83FCF500DC3BA3 /* HikeShare */;
+			targetProxy = B53A1E0A1B83FCF500DC3BA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B53A1DF11B83FCF500DC3BA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53A1DF21B83FCF500DC3BA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B53A1DF61B83FCF500DC3BA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53A1DF71B83FCF500DC3BA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B53A1E101B83FCF500DC3BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B53A1E111B83FCF500DC3BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B53A1E131B83FCF500DC3BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HikeShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wcc.HikeShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B53A1E141B83FCF500DC3BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HikeShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wcc.HikeShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B53A1E161B83FCF500DC3BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HikeShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wcc.HikeShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HikeShare.app/HikeShare";
+			};
+			name = Debug;
+		};
+		B53A1E171B83FCF500DC3BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HikeShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wcc.HikeShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HikeShare.app/HikeShare";
+			};
+			name = Release;
+		};
+		B53A1E191B83FCF500DC3BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HikeShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wcc.HikeShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HikeShare;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B53A1E1A1B83FCF500DC3BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HikeShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wcc.HikeShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HikeShare;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B53A1DE51B83FCF500DC3BA3 /* Build configuration list for PBXProject "HikeShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53A1E101B83FCF500DC3BA3 /* Debug */,
+				B53A1E111B83FCF500DC3BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B53A1E121B83FCF500DC3BA3 /* Build configuration list for PBXNativeTarget "HikeShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53A1E131B83FCF500DC3BA3 /* Debug */,
+				B53A1E141B83FCF500DC3BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B53A1E151B83FCF500DC3BA3 /* Build configuration list for PBXNativeTarget "HikeShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53A1E161B83FCF500DC3BA3 /* Debug */,
+				B53A1E171B83FCF500DC3BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B53A1E181B83FCF500DC3BA3 /* Build configuration list for PBXNativeTarget "HikeShareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53A1E191B83FCF500DC3BA3 /* Debug */,
+				B53A1E1A1B83FCF500DC3BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B53A1DE21B83FCF500DC3BA3 /* Project object */;
+}
