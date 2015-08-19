@@ -25,7 +25,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenVirtical.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OEl-1R-x0A">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenVirtical.png" translatesAutoresizingMaskIntoConstraints="NO" id="OEl-1R-x0A">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HikeShare" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdq-Ev-Exq">
@@ -84,6 +84,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreenVirtical.jpg" width="1242" height="2208"/>
+        <image name="LaunchScreenVirtical.png" width="1242" height="2208"/>
     </resources>
 </document>

@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import Social
+import Accounts
 
 class CameraViewController: UIViewController {
     
@@ -17,6 +19,7 @@ class CameraViewController: UIViewController {
     var captureSession: AVCaptureSession?
     var stillImageOutput: AVCaptureStillImageOutput?
     var previewLayer: AVCaptureVideoPreviewLayer?
+    let picker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,14 +80,36 @@ class CameraViewController: UIViewController {
                     let image = UIImage(CGImage: cgImageRef!, scale: 1.0, orientation: UIImageOrientation.Right)
                     self.capturedImage.image = image
                     UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+                    
+                    //starts tweet
+                    if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
+                        let twitterController:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+                        twitterController.setInitialText("I just hiked " + "\r\n" + "\r\n" + "#MissionPeak")
+                        //img
+                        twitterController.addImage(image)
+                        self.presentViewController(twitterController, animated: true, completion: nil)
+                    } else {
+                        let alert = UIAlertController(title: "Twitter Account", message: "Please login to your Twitter account.", preferredStyle: UIAlertControllerStyle.Alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                        self.presentViewController(alert, animated: true, completion: nil)
+                    }
+                    //ends tweet
                 }
             })
         }
     }
     
-    @IBAction func didPressTakeAnother(sender: AnyObject) {
-        captureSession!.startRunning()
+    @IBAction func photoFromLibrary(sender: UIBarButtonItem) {
+        picker.allowsEditing = false //2
+        picker.sourceType = .PhotoLibrary //3
+        picker.modalPresentationStyle = .Popover
+        presentViewController(picker, animated: true, completion: nil)//4
+        picker.popoverPresentationController?.barButtonItem = sender
     }
+    
+//    @IBAction func didPressTakeAnother(sender: AnyObject) {
+//        captureSession!.startRunning()
+//    }
     
     
 }

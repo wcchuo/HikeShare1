@@ -14,9 +14,9 @@
 		B53A1DF81B83FCF500DC3BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A1DF61B83FCF500DC3BA3 /* LaunchScreen.storyboard */; };
 		B53A1E031B83FCF500DC3BA3 /* HikeShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A1E021B83FCF500DC3BA3 /* HikeShareTests.swift */; };
 		B53A1E0E1B83FCF500DC3BA3 /* HikeShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A1E0D1B83FCF500DC3BA3 /* HikeShareUITests.swift */; };
+		B57D8E851B84445700E0A311 /* LaunchScreenVirtical.png in Resources */ = {isa = PBXBuildFile; fileRef = B57D8E841B84445700E0A311 /* LaunchScreenVirtical.png */; };
 		B592DB711B84049200BE2CEC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B592DB701B84049200BE2CEC /* MapViewController.swift */; };
 		B592DB731B8408AE00BE2CEC /* MissionPeakMap.png in Resources */ = {isa = PBXBuildFile; fileRef = B592DB721B8408AE00BE2CEC /* MissionPeakMap.png */; };
-		B592DB7F1B840F9A00BE2CEC /* LaunchScreenVirtical.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B592DB7E1B840F9A00BE2CEC /* LaunchScreenVirtical.jpg */; };
 		B592DB811B84189D00BE2CEC /* CameraScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B592DB801B84189D00BE2CEC /* CameraScreen.jpg */; };
 		B592DB831B841A2300BE2CEC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B592DB821B841A2300BE2CEC /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
@@ -52,9 +52,9 @@
 		B53A1E091B83FCF500DC3BA3 /* HikeShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikeShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53A1E0D1B83FCF500DC3BA3 /* HikeShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeShareUITests.swift; sourceTree = "<group>"; };
 		B53A1E0F1B83FCF500DC3BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57D8E841B84445700E0A311 /* LaunchScreenVirtical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaunchScreenVirtical.png; path = HikeShare.Assets/LaunchScreenVirtical.png; sourceTree = "<group>"; };
 		B592DB701B84049200BE2CEC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B592DB721B8408AE00BE2CEC /* MissionPeakMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MissionPeakMap.png; path = HikeShare.Assets/MissionPeakMap.png; sourceTree = "<group>"; };
-		B592DB7E1B840F9A00BE2CEC /* LaunchScreenVirtical.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LaunchScreenVirtical.jpg; path = HikeShare.Assets/LaunchScreenVirtical.jpg; sourceTree = "<group>"; };
 		B592DB801B84189D00BE2CEC /* CameraScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CameraScreen.jpg; path = HikeShare.Assets/CameraScreen.jpg; sourceTree = "<group>"; };
 		B592DB821B841A2300BE2CEC /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,8 +141,8 @@
 		B592DB6F1B84040A00BE2CEC /* HikeShareAssets */ = {
 			isa = PBXGroup;
 			children = (
+				B57D8E841B84445700E0A311 /* LaunchScreenVirtical.png */,
 				B592DB801B84189D00BE2CEC /* CameraScreen.jpg */,
-				B592DB7E1B840F9A00BE2CEC /* LaunchScreenVirtical.jpg */,
 				B592DB721B8408AE00BE2CEC /* MissionPeakMap.png */,
 			);
 			name = HikeShareAssets;
@@ -253,7 +253,7 @@
 			files = (
 				B53A1DF81B83FCF500DC3BA3 /* LaunchScreen.storyboard in Resources */,
 				B592DB731B8408AE00BE2CEC /* MissionPeakMap.png in Resources */,
-				B592DB7F1B840F9A00BE2CEC /* LaunchScreenVirtical.jpg in Resources */,
+				B57D8E851B84445700E0A311 /* LaunchScreenVirtical.png in Resources */,
 				B53A1DF51B83FCF500DC3BA3 /* Assets.xcassets in Resources */,
 				B592DB811B84189D00BE2CEC /* CameraScreen.jpg in Resources */,
 				B53A1DF31B83FCF500DC3BA3 /* Main.storyboard in Resources */,
