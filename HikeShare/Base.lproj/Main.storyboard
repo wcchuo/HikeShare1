@@ -2,12 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yNX-ko-rL6">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Camera-->
         <scene sceneID="rox-JZ-kIA">
             <objects>
-                <viewController id="dww-sz-gYS" sceneMemberID="viewController">
+                <viewController id="dww-sz-gYS" customClass="CameraViewController" customModule="HikeShare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8et-w4-BhE"/>
                         <viewControllerLayoutGuide type="bottom" id="CoR-lU-q6u"/>
@@ -15,18 +16,60 @@
                     <view key="view" contentMode="scaleToFill" id="qxQ-E0-r4S">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CameraScreen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4jV-x8-inl">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="puf-J1-kuG">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R6o-sg-74N">
+                                        <rect key="frame" x="409" y="330" width="175" height="138"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ym-y1-3jA">
+                                        <rect key="frame" x="259" y="388" width="82" height="72"/>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7ym-y1-3jA" secondAttribute="bottom" constant="27" id="4oL-rT-Vur"/>
+                                    <constraint firstItem="7ym-y1-3jA" firstAttribute="leading" secondItem="puf-J1-kuG" secondAttribute="leading" constant="259" id="69P-6P-aSt"/>
+                                    <constraint firstItem="7ym-y1-3jA" firstAttribute="centerX" secondItem="puf-J1-kuG" secondAttribute="centerX" id="GPi-H4-itE"/>
+                                    <constraint firstAttribute="trailing" secondItem="7ym-y1-3jA" secondAttribute="trailing" constant="259" id="P6H-kp-OCG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4jV-x8-inl" firstAttribute="centerX" secondItem="qxQ-E0-r4S" secondAttribute="centerX" id="7WJ-O6-5kN"/>
+                            <constraint firstItem="4jV-x8-inl" firstAttribute="bottom" secondItem="qxQ-E0-r4S" secondAttribute="bottomMargin" id="IXf-qx-ofR"/>
+                            <constraint firstItem="4jV-x8-inl" firstAttribute="top" secondItem="8et-w4-BhE" secondAttribute="bottom" id="QKK-gg-ezL"/>
+                            <constraint firstItem="4jV-x8-inl" firstAttribute="centerY" secondItem="qxQ-E0-r4S" secondAttribute="centerY" id="RSP-ow-Rco"/>
+                            <constraint firstItem="4jV-x8-inl" firstAttribute="leading" secondItem="qxQ-E0-r4S" secondAttribute="leadingMargin" constant="-20" id="UKp-1z-Rpm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4jV-x8-inl" secondAttribute="trailing" constant="-20" id="lTY-nS-YUx"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="gzk-xd-UGI"/>
+                    <navigationItem key="navigationItem" title="Camera" id="gzk-xd-UGI"/>
+                    <connections>
+                        <outlet property="capturedImage" destination="R6o-sg-74N" id="AL5-dM-fdu"/>
+                        <outlet property="previewView" destination="puf-J1-kuG" id="peo-k5-oAa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1P9-QU-hv6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="884" y="227"/>
         </scene>
-        <!--View Controller-->
+        <!--Mission Peak Map-->
         <scene sceneID="32q-9W-cfE">
             <objects>
-                <viewController id="G00-wc-X2f" sceneMemberID="viewController">
+                <viewController id="G00-wc-X2f" customClass="MapViewController" customModule="HikeShare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JXU-sf-hEz"/>
                         <viewControllerLayoutGuide type="bottom" id="5TF-Zv-HKH"/>
@@ -34,9 +77,14 @@
                     <view key="view" contentMode="scaleToFill" id="daf-AJ-ptP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HCJ-kQ-yLa">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yJZ-FG-1CI"/>
+                    <navigationItem key="navigationItem" title="Mission Peak Map" id="yJZ-FG-1CI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2cH-rX-gtp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,4 +148,7 @@
             <point key="canvasLocation" x="72" y="227"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CameraScreen.jpg" width="1242" height="2208"/>
+    </resources>
 </document>
